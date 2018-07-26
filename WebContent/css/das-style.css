@@ -1,0 +1,125 @@
+body {
+	
+	margin : 0;
+	padding: 0;
+	background: #333;
+	width: 100%;
+	height: 100%;
+	
+	
+}
+h1{
+	text-align: center;
+	font-size: 50px;
+	font-weight:bold;
+	font-family: sans-serif,Arial;
+	color: #55aa93;
+}
+
+.login-form{
+	
+	width: 300px;
+	height:auto;
+	margin: auto;
+	position: absolute;
+	padding: 10px 25px;
+	background: #eee;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	border-bottom: 5px solid gray;
+	
+}
+
+.login-face{
+	width: 100px;
+	height: 100px;
+	position: relative;
+	background: skyblue;
+	border-radius: 100px;
+	margin: 0 auto;
+	margin-top: 75px;
+}
+.login-face>img{
+	width: 100px;
+	height:100px;
+	overflow: hidden;
+}
+.form{
+	width: 100%;
+	position: relative;
+	margin: 25px auto;
+}
+.input{
+	width: 100%;
+	height: 50%;
+	position: relative;
+	margin: 25px auto;
+}
+input[type = "text"],
+input[type = "password"]{
+	width: 100%;
+	height:50px; 
+	position: relative;
+	outline: none;
+	border: 2px solid #ddd;
+	border-radius: 5px;
+	font-size: 16px;
+	font-family: sans-serif,Arial;
+	
+}
+.fa{
+	position:absolute;
+	right: 6px;
+	top: 15px;
+	font-size: 20px;
+	color: gray; 
+}
+input[type = "text"]:focus,input[type = "password"]:focus {
+	
+	border: 2px solid #55aa93;
+
+}
+input[type = "submit"] {
+	
+	width: 100%;
+	height: 50px;
+	top: 40px;
+	background: #0AC986;
+	font-family: sans-serif, Arial;
+	font-size: 16px;
+	color: #fff;
+	outline: none;
+	border-radius: 5px;
+	border: 0px;
+	cursor: pointer;
+	margin-top: 20px;
+	
+}
+
+.error-msg{
+	font-size: 16px;
+	font-family: sans-serif, Arial;
+	color: red;
+	margin-top: 50px; 
+	display: none;
+}
+.error{
+	position: relative;
+	animation : shake 1s;
+}
+@keyframes shake{
+
+	0%,100%{
+		left: 0px
+	}
+	20%,80%{
+		left : -15px;
+	}
+	40%, 60%{
+		left:15px;
+	}
+	
+}
+	
+	
